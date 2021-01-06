@@ -19,17 +19,18 @@ class Luigi(Mario):
     score = 200
 
     def __init__(self):
-        Mario.name = "Luigi"
-        Mario.color = "green"
-        Mario.speed = 8
-        Mario.jump = 10
+        super().__init__()
+        Luigi.name = "Luigi"
+        Luigi.color = "green"
+        Luigi.speed = 8
+        Luigi.jump = 10
         print("Let'sa go!")
 
     def stats(self):
         print(self.name + "'s speed is " + str(self.speed) + ", jump is " + str(self.jump) + " and item is " + self.item)
 
     def sayTheLine(self):
-        super().sayTheLine
+        super().sayTheLine()
         print(self.name + " number one!")
 
     def helping(self):
