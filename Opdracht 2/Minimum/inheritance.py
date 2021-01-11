@@ -37,12 +37,11 @@ class Luigi(Mario):
         print("Helping Mario!")
 
 MarioP = Mario()
+LuigiP = Luigi()
 
 print("Mario")
 MarioP.stats()
 MarioP.sayTheLine()
-
-LuigiP = Luigi()
 
 print("Luigi")
 LuigiP.stats()
